@@ -1,10 +1,21 @@
-# Openjdk 8 image on alpine
+# OpenJDK docker images
+
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
-Docker container based on alpine with openjdk 8
-This container includes dockerize.
+This repo will contain the openJDK docker images
 
-Apps supposed to be installed in `/app` and the default user is `java`
+Current versions available:
+```
+.
+├── 10
+│   └── jdk
+│       └── slim
+│           └── Dockerfile
+├── 8
+│   └── jre
+│       └── alpine
+│           └── Dockerfile
+```
 
 ## Issues
 
@@ -33,6 +44,6 @@ This module is part of the Philips Forest.
                                                                  Infrastructure
 ```
 
-Talk to the forestkeepers in the `forest`-channel on Slack.
+Talk to the forestkeepers in the `openjdk`-channel on Slack.
 
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
