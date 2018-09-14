@@ -6,9 +6,12 @@ This repo will contain the openJDK docker images
 
 Current versions available:
 ```
-.
+
 ├── 10
-│   └── jdk
+│   ├── jdk
+│   │   └── slim
+│   │       └── Dockerfile
+│   └── jre
 │       └── slim
 │           └── Dockerfile
 ├── 8
