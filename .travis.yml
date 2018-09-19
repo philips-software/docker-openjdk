@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: build
+      script: ./bin/docker_build.sh 8/jre/alpine
+    - stage: build
+      script: ./bin/docker_build.sh 10/jdk/slim
+    - stage: build
+      script: ./bin/docker_build.sh 10/jre/slim
+
