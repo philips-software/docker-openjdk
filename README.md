@@ -1,6 +1,7 @@
-# OpenJDK docker images
-
+[![Build Status](https://travis-ci.com/philips-software/openjdk.svg?token=rJGEzBK71KGFbNJFk2Ws&branch=master)](https://travis-ci.com/philips-software/openjdk)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
+
+# OpenJDK docker images
 
 This repo will contain the openJDK docker images
 
