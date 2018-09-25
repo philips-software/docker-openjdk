@@ -1,0 +1,22 @@
+builds: 
+  - 
+    directory: 10/jdk/slim
+    shared-tags: 
+      - 10-jdk
+    tags: 
+      - 10-jdk-slim
+      - 10-jdk
+  - 
+    directory: 10/jre/slim
+    shared-tags: 
+      - 10-jre
+    tags: 
+      - 10-jre-slim
+      - 10-jre
+  - 
+    directory: 8/jre/alpine
+    shared-tags:
+      - 8-jre
+    tags: 
+      - 8-jre-alpine
+      - 8-jre
