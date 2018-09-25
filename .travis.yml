@@ -1,14 +1,13 @@
-sudo: required
+language: rust
+rust:
+    - 1.29.0
 
-services:
-  - docker
+before_install:
+  - cd tools/builder
 
-jobs:
-  include:
-    - stage: build
-      script: ./bin/docker_build.sh 8/jre/alpine
-    - stage: build
-      script: ./bin/docker_build.sh 10/jdk/slim
-    - stage: build
-      script: ./bin/docker_build.sh 10/jre/slim
+install:
+  - cargo build
+
+script:
+  - cargo run
 
