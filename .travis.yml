@@ -9,5 +9,5 @@ install:
   - cargo build
 
 script:
-  - cargo run ../../versions.yml
+  - cargo run ../../versions.yml false
 
