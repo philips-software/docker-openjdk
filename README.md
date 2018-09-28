@@ -8,18 +8,22 @@ This repo will contain docker images
 Current versions available:
 ```
 .
-└── openjdk
-    ├── 10
-    │   ├── jdk
-    │   │   └── slim
-    │   │       └── Dockerfile
-    │   └── jre
-    │       └── slim
-    │           └── Dockerfile
-    └── 8
-        └── jre
-            └── alpine
-                └── Dockerfile
+├── openjdk
+│   ├── 10
+│   │   ├── jdk
+│   │   │   └── slim
+│   │   │       └── Dockerfile
+│   │   └── jre
+│   │       └── slim
+│   │           └── Dockerfile
+│   └── 8
+│       └── jre
+│           └── alpine
+│               └── Dockerfile
+└── scala
+    └── 2.12
+        └── alpine
+            └── Dockerfile
 ```
 
 ## Issues

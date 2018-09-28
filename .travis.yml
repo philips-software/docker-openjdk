@@ -6,9 +6,9 @@ services:
 jobs:
   include:
     - stage: build
-      script: ./bin/docker_build.sh openjdk/8/jre/alpine
-    - stage: build
-      script: ./bin/docker_build.sh openjdk/10/jdk/slim
-    - stage: build
-      script: ./bin/docker_build.sh openjdk/10/jre/slim
+      - script: ./bin/docker_build.sh openjdk/8/jre/alpine
+      - script: ./bin/docker_build.sh openjdk/10/jdk/slim
+      - script: ./bin/docker_build.sh openjdk/10/jre/slim
+      - script: ./bin/docker_build.sh openjdk/10/jre/slim
+      - script: ./bin/docker_build.sh scala/2.12/alpine 
 
