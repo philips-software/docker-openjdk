@@ -1,0 +1,5 @@
+builds: 
+  - 
+    directory: 10/jdk/slim
+    tags: 
+      - 10-jdk-slim

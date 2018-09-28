@@ -50,3 +50,8 @@ pub fn run(config: Config) -> Result<(), Box<Error>> {
 
     Ok(())
 }
+
+fn create_command<'a>( contents: &'a str, push: bool,) -> Vec<&'a str> {
+    vec!["docker build 10/jdk/slim openjdk:10-jdk"]
+}
+
