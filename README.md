@@ -1,29 +1,30 @@
-[![Build Status](https://travis-ci.com/philips-software/openjdk.svg?token=rJGEzBK71KGFbNJFk2Ws&branch=master)](https://travis-ci.com/philips-software/openjdk)
+[![Build Status](https://travis-ci.com/philips-software/docker-images.svg?token=rJGEzBK71KGFbNJFk2Ws&branch=master)](https://travis-ci.com/philips-software/docker-images)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
-# OpenJDK docker images
+# Docker images
 
-This repo will contain the openJDK docker images
+This repo will contain docker images
 
 Current versions available:
 ```
-
-├── 10
-│   ├── jdk
-│   │   └── slim
-│   │       └── Dockerfile
-│   └── jre
-│       └── slim
-│           └── Dockerfile
-├── 8
-│   └── jre
-│       └── alpine
-│           └── Dockerfile
+.
+└── openjdk
+    ├── 10
+    │   ├── jdk
+    │   │   └── slim
+    │   │       └── Dockerfile
+    │   └── jre
+    │       └── slim
+    │           └── Dockerfile
+    └── 8
+        └── jre
+            └── alpine
+                └── Dockerfile
 ```
 
 ## Issues
 
-- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/openjdk/issues)
+- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/docker-images/issues)
 
 ## Author
 
