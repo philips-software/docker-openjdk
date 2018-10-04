@@ -25,6 +25,24 @@ Current versions available:
         └── alpine
             └── Dockerfile
 ```
+## Usage
+
+```
+docker run -it --rm philips-software/openjdk:10 java -version
+docker run -it --rm philips-software/openjdk:10-jre java -version
+docker run -it --rm philips-software/openjdk:8 java -version
+docker run -it --rm philips-software/scala:2.12 scala -version
+```
+
+## Simple Tags
+
+### openjdk
+- `10`, `10-jdk`, `10-jdk-slim` [openjdk/10/jdk/slim/Dockerfile](openjdk/10/jdk/slim/Dockerfile)
+- `10-jre`, `10-jre-slim` [openjdk/10/jre/slim/Dockerfile](openjdk/10/jre/slim/Dockerfile)
+- `8`, `8-jre`, `8-jre-alpine` [openjdk/8/jre/alpine/Dockerfile](openjdk/8/jre/alpine/Dockerfile)
+
+### scala
+- `2.12`, `2.12-alpine`, `2.12-1.2.3`, `2.12-1.2.3-alpine` [scala/2.12/alpine/Dockerfile](scala/2.12/alpine/Dockerfile)
 
 ## Issues
 
