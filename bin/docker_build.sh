@@ -6,6 +6,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 builddir=$1
+tag=$2
 currentdir=$(pwd)
 
 echo $currentdir
