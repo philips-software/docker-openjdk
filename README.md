@@ -28,10 +28,10 @@ Current versions available:
 ## Usage
 
 ```
-docker run -it --rm philips-software/openjdk:10 java -version
-docker run -it --rm philips-software/openjdk:10-jre java -version
-docker run -it --rm philips-software/openjdk:8 java -version
-docker run -it --rm philips-software/scala:2.12 scala -version
+docker run -it --rm philipssoftware/openjdk:10 java -version
+docker run -it --rm philipssoftware/openjdk:10-jre java -version
+docker run -it --rm philipssoftware/openjdk:8 java -version
+docker run -it --rm philipssoftware/scala:2.12 scala -version
 ```
 
 ## Simple Tags
