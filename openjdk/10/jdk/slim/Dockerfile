@@ -9,7 +9,6 @@ RUN apt-get update && \
       bzip2 \
       unzip \
       git \
-      curl \
       wget \
       curl \
       python-pip \
