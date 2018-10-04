@@ -37,12 +37,12 @@ docker run -it --rm philips-software/scala:2.12 scala -version
 ## Simple Tags
 
 ### openjdk
-- `10`, `10-jdk`, `10-jdk-slim` [openjdk/10/jdk/slim/Dockerfile](openjdk/10/jdk/slim/Dockerfile)
-- `10-jre`, `10-jre-slim` [openjdk/10/jre/slim/Dockerfile](openjdk/10/jre/slim/Dockerfile)
-- `8`, `8-jre`, `8-jre-alpine` [openjdk/8/jre/alpine/Dockerfile](openjdk/8/jre/alpine/Dockerfile)
+- `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim` [openjdk/10/jdk/slim/Dockerfile](openjdk/10/jdk/slim/Dockerfile)
+- `openjdk:10-jre`, `openjdk:10-jre-slim` [openjdk/10/jre/slim/Dockerfile](openjdk/10/jre/slim/Dockerfile)
+- `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine` [openjdk/8/jre/alpine/Dockerfile](openjdk/8/jre/alpine/Dockerfile)
 
 ### scala
-- `2.12`, `2.12-alpine`, `2.12-1.2.3`, `2.12-1.2.3-alpine` [scala/2.12/alpine/Dockerfile](scala/2.12/alpine/Dockerfile)
+- `scala:2.12`, `scala:2.12-alpine`, `scala:2.12-1.2.3`, `scala:2.12-1.2.3-alpine` [scala/2.12/alpine/Dockerfile](scala/2.12/alpine/Dockerfile)
 
 ## Issues
 
@@ -50,8 +50,8 @@ docker run -it --rm philips-software/scala:2.12 scala -version
 
 ## Author
 
-Jeroen Knoops (<jeroen.knoops@philips.com>)
-Niek Palm (<niek.palm@pihlips.com>)
+- Jeroen Knoops <jeroen.knoops@philips.com>
+- Heijden, Remco van der <remco.van.der.heijden@philips.com>
 
 ## License
 
