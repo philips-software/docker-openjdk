@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/philips-software/docker-images.svg?token=rJGEzBK71KGFbNJFk2Ws&branch=master)](https://travis-ci.com/philips-software/docker-images)
+[![Build Status](https://travis-ci.com/philips-software/docker-images.svg?token=rJGEzBK71KGFbNJFk2Ws&branch=master)](https://travis-ci.com/philips-software/openjdk)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
 # Docker images
@@ -8,22 +8,17 @@ This repo will contain docker images
 Current versions available:
 ```
 .
-├── openjdk
-│   ├── 10
-│   │   ├── jdk
-│   │   │   └── slim
-│   │   │       └── Dockerfile
-│   │   └── jre
-│   │       └── slim
-│   │           └── Dockerfile
-│   └── 8
-│       └── jre
-│           └── alpine
-│               └── Dockerfile
-└── scala
-    └── 2.12
-        └── alpine
-            └── Dockerfile
+├── 10
+│   ├── jdk
+│   │   └── slim
+│   │       └── Dockerfile
+│   └── jre
+│       └── slim
+│           └── Dockerfile
+├── 8
+│   └── jre
+│       └── alpine
+│           └── Dockerfile
 ```
 ## Usage
 
@@ -31,7 +26,6 @@ Current versions available:
 docker run -it --rm philipssoftware/openjdk:10 java -version
 docker run -it --rm philipssoftware/openjdk:10-jre java -version
 docker run -it --rm philipssoftware/openjdk:8 java -version
-docker run -it --rm philipssoftware/scala:2.12 scala -version
 ```
 
 ## Simple Tags
@@ -41,12 +35,9 @@ docker run -it --rm philipssoftware/scala:2.12 scala -version
 - `openjdk:10-jre`, `openjdk:10-jre-slim` [openjdk/10/jre/slim/Dockerfile](openjdk/10/jre/slim/Dockerfile)
 - `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine` [openjdk/8/jre/alpine/Dockerfile](openjdk/8/jre/alpine/Dockerfile)
 
-### scala
-- `scala:2.12`, `scala:2.12-alpine`, `scala:2.12-1.2.3`, `scala:2.12-1.2.3-alpine` [scala/2.12/alpine/Dockerfile](scala/2.12/alpine/Dockerfile)
-
 ## Issues
 
-- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/docker-images/issues)
+- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/openjdk/issues)
 
 ## Author
 

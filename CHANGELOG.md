@@ -9,6 +9,5 @@ and this project uses the version of main tool as main version number .
 ### Added
 - Add openjdk 8
 - Add openjdk 10
-- Add Scala
 
-[Unreleased]: https://github.com/philips-software/docker-images
+[Unreleased]: https://github.com/philips-software/openjdk
