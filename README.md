@@ -62,6 +62,6 @@ This module is part of the Philips Forest.
                                                                  Infrastructure
 ```
 
-Talk to the forestkeepers in the `openjdk`-channel on Slack.
+Talk to the forestkeepers in the `docker-images`-channel on Slack.
 
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
