@@ -31,7 +31,7 @@ docker run -it --rm philipssoftware/openjdk:8 java -version
 ## Simple Tags
 
 ### openjdk
-- `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim` [10/jdk/slim/Dockerfile](10/jdk/slim/Dockerfile)
+- `openjdk`, `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim` [10/jdk/slim/Dockerfile](10/jdk/slim/Dockerfile)
 - `openjdk:10-jre`, `openjdk:10-jre-slim` [10/jre/slim/Dockerfile](10/jre/slim/Dockerfile)
 - `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine` [8/jre/alpine/Dockerfile](8/jre/alpine/Dockerfile)
 
