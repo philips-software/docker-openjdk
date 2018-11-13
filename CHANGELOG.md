@@ -9,5 +9,6 @@ and this project uses the version of main tool as main version number .
 ### Added
 - Add openjdk 8
 - Add openjdk 10
+- Add openjdk 11
 
 [Unreleased]: https://github.com/philips-software/openjdk
