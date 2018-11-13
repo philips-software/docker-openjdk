@@ -3,14 +3,15 @@ MAINTAINER Forest Keepers
 
 RUN apt-get update && \
     apt-get install -y \
-    curl \
-    jq \
-    openssl \
-    net-tools \
-    python-pip \
-    wget
+      curl \
+      jq \
+      openssl \
+      net-tools \
+      python-pip \
+      wget && \
+    rm -rf /var/lib/apt/lists/*
 
-ENV AWSCLI_VERSION 1.15.4
+ENV AWSCLI_VERSION 1.16.47
 
 RUN pip install awscli==$AWSCLI_VERSION
 

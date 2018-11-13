@@ -4,6 +4,8 @@ MAINTAINER Forest Keepers
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
 
+ENV AWSCLI_VERSION 1.16.47
+
 RUN apt-get update && \
     apt-get install -y \
       bzip2 \
@@ -11,12 +13,13 @@ RUN apt-get update && \
       git \
       wget \
       curl \
+      python \
       python-pip \
-      bash
-
-ENV AWSCLI_VERSION 1.15.4
-
-RUN pip install awscli==$AWSCLI_VERSION
+      bash && \
+    pip install --no-cache-dir awscli==$AWSCLI_VERSION && \
+#    apt-get --purge autoremove python-pip -y && \
+    rm -rf /var/lib/apt/lists/* && \
+    apt-get clean 
 
 RUN echo 'source $HOME/aws/env/bin/activate' >> .bashrc && \
     echo 'complete -C aws_completer aws' >> .bashrc
