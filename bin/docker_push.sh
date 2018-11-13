@@ -19,6 +19,10 @@ echo "-------------------------------------------------------------------------"
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 cd $builddir
+
+echo "Pushing philipssoftware/$basetag"
+docker push philipssoftware/$basetag
+
 while test ${#} -gt 0
 do
   echo "Pushing philipssoftware/$1"

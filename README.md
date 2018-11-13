@@ -29,6 +29,8 @@ Current versions available:
 ```
 ## Usage
 
+Images can be found on [https://hub.docker.com/r/philipssoftware/openjdk/](https://hub.docker.com/r/philipssoftware/openjdk/).
+
 ```
 docker run -it --rm philipssoftware/openjdk:11 java -version
 docker run -it --rm philipssoftware/openjdk:11-jre java -version
