@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/philips-software/docker-images.svg?token=rJGEzBK71KGFbNJFk2Ws&branch=master)](https://travis-ci.com/philips-software/openjdk)
+[![Build Status](https://travis-ci.com/philips-software/openjdk.svg?branch=master)](https://travis-ci.com/philips-software/openjdk)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
 # Docker images
