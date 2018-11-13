@@ -15,6 +15,13 @@ Current versions available:
 │   └── jre
 │       └── slim
 │           └── Dockerfile
+├── 11
+│   ├── jdk
+│   │   └── slim
+│   │       └── Dockerfile
+│   └── jre
+│       └── slim
+│           └── Dockerfile
 ├── 8
 │   └── jre
 │       └── alpine
@@ -23,6 +30,8 @@ Current versions available:
 ## Usage
 
 ```
+docker run -it --rm philipssoftware/openjdk:11 java -version
+docker run -it --rm philipssoftware/openjdk:11-jre java -version
 docker run -it --rm philipssoftware/openjdk:10 java -version
 docker run -it --rm philipssoftware/openjdk:10-jre java -version
 docker run -it --rm philipssoftware/openjdk:8 java -version
@@ -31,7 +40,9 @@ docker run -it --rm philipssoftware/openjdk:8 java -version
 ## Simple Tags
 
 ### openjdk
-- `openjdk`, `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim` [10/jdk/slim/Dockerfile](10/jdk/slim/Dockerfile)
+- `openjdk`, `openjdk:11`, `openjdk:11-jdk`, `openjdk:11-jdk-slim` [11/jdk/slim/Dockerfile](11/jdk/slim/Dockerfile)
+- `openjdk:11-jre`, `openjdk:11-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
+- `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim` [10/jdk/slim/Dockerfile](10/jdk/slim/Dockerfile)
 - `openjdk:10-jre`, `openjdk:10-jre-slim` [10/jre/slim/Dockerfile](10/jre/slim/Dockerfile)
 - `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine` [8/jre/alpine/Dockerfile](8/jre/alpine/Dockerfile)
 
