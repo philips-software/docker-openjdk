@@ -11,5 +11,6 @@ and this project uses the version of main tool as main version number .
 - Add openjdk 10
 - Add openjdk 11
 - Parallel Travis builds
+- Add REPO in dockerfile with reference to github commit
 
 [Unreleased]: https://github.com/philips-software/openjdk

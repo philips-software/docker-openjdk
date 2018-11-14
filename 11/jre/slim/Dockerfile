@@ -29,5 +29,7 @@ USER java
 WORKDIR /app
 
 ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport"
+
+ADD REPO .
 # Define default command.
 CMD ["/bin/sh"]

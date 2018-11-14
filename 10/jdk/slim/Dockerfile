@@ -24,4 +24,6 @@ RUN apt-get update && \
 RUN echo 'source $HOME/aws/env/bin/activate' >> .bashrc && \
     echo 'complete -C aws_completer aws' >> .bashrc
 
+ADD REPO .
+
 ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport"
