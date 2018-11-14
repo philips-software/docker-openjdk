@@ -12,11 +12,17 @@ shift
 tags=$@
 currentdir=$(pwd)
 
+project=`basename $currentdir`
+commitsha=`git rev-parse --verify HEAD`
+
 echo $currentdir
 
 echo "Building docker image: $builddir with tag: $basetag"
 echo "-------------------------------------------------------------------------"
 cd $builddir
+
+echo "https://github.com/philips-software/$project/tree/$commitsha" > REPO
+
 docker build . -t philipssoftware/$basetag
 while test ${#} -gt 0
 do
