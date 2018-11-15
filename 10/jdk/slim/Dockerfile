@@ -13,16 +13,9 @@ RUN apt-get update && \
       git \
       wget \
       curl \
-      python \
-      python-pip \
       bash && \
-    pip install --no-cache-dir awscli==$AWSCLI_VERSION && \
-#    apt-get --purge autoremove python-pip -y && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean 
-
-RUN echo 'source $HOME/aws/env/bin/activate' >> .bashrc && \
-    echo 'complete -C aws_completer aws' >> .bashrc
 
 ADD REPO .
 
