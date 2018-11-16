@@ -33,7 +33,9 @@ Current versions available:
 ├── 8
 │   └── jre
 │       └── alpine
-│           └── Dockerfile```
+│           └── Dockerfile
+
+```
 ## Usage
 
 Images can be found on [https://hub.docker.com/r/philipssoftware/openjdk/](https://hub.docker.com/r/philipssoftware/openjdk/).
