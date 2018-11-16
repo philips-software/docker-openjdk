@@ -1,5 +1,5 @@
 FROM openjdk:11.0.1-jre-slim
-MAINTAINER Forest Keepers
+MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 RUN apt-get update && \
     apt-get install -y \
@@ -7,16 +7,8 @@ RUN apt-get update && \
       jq \
       openssl \
       net-tools \
-      python-pip \
       wget && \
     rm -rf /var/lib/apt/lists/*
-
-ENV AWSCLI_VERSION 1.16.47
-
-RUN pip install awscli==$AWSCLI_VERSION
-
-RUN echo 'source $HOME/aws/env/bin/activate' >> .bashrc && \
-    echo 'complete -C aws_completer aws' >> .bashrc
 
 RUN addgroup --system java && \
     adduser --system --group java

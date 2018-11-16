@@ -1,5 +1,9 @@
 #!/bin/bash
 
+currentdir=$(pwd)
+
+cd `dirname "$0"`
+
 if [ "$#" -lt 2 ]; then
   echo "You need to provide a directory with a Dockerfile in it and a tag."
   exit 1
@@ -10,7 +14,6 @@ shift
 basetag=$1
 shift
 tags=$@
-currentdir=$(pwd)
 
 project=`basename $currentdir`
 commitsha=`git rev-parse --verify HEAD`
@@ -19,7 +22,7 @@ echo $currentdir
 
 echo "Building docker image: $builddir with tag: $basetag"
 echo "-------------------------------------------------------------------------"
-cd $builddir
+cd ../$builddir
 
 echo "https://github.com/philips-software/$project/tree/$commitsha" > REPO
 

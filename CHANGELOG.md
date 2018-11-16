@@ -13,5 +13,6 @@ and this project uses the version of main tool as main version number .
 - Parallel Travis builds
 - Add REPO in dockerfile with reference to github commit
 - Push docker images to https://hub.docker.com/r/philipssoftware/openjdk/
+- Remove AWS-cli from default images. Appended all images with `-aws` for images with AWS-cli 
 
 [Unreleased]: https://github.com/philips-software/openjdk
