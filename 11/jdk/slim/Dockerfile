@@ -1,19 +1,27 @@
 FROM openjdk:11.0.1-jdk-slim
-MAINTAINER Forest Keepers
+MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
 
 RUN apt-get update && \
     apt-get install -y \
-      bzip2 \
-      unzip \
       git \
       wget \
       curl \
       bash && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean 
+
+RUN addgroup --system java && \
+    adduser --system --group java
+
+RUN mkdir /app
+RUN chown java:java /app
+
+USER java
+
+WORKDIR /app
 
 ADD REPO .
 

@@ -1,5 +1,5 @@
 FROM openjdk:10.0.2-13-slim
-MAINTAINER Forest Keepers
+MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 RUN apt-get update && \
     apt-get install -y \

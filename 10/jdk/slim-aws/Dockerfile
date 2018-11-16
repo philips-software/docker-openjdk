@@ -1,5 +1,5 @@
 FROM openjdk:10.0.2-13-jdk-slim
-MAINTAINER Forest Keepers
+MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
@@ -8,8 +8,6 @@ ENV AWSCLI_VERSION 1.16.47
 
 RUN apt-get update && \
     apt-get install -y \
-      bzip2 \
-      unzip \
       git \
       wget \
       curl \
@@ -20,8 +18,15 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean 
 
-RUN echo 'source $HOME/aws/env/bin/activate' >> .bashrc && \
-    echo 'complete -C aws_completer aws' >> .bashrc
+RUN addgroup --system java && \
+    adduser --system --group java
+
+RUN mkdir /app
+RUN chown java:java /app
+
+USER java
+
+WORKDIR /app
 
 ADD REPO .
 
