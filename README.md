@@ -51,17 +51,18 @@ docker run -it --rm philipssoftware/openjdk:8 java -version
 ## Simple Tags
 
 ### openjdk
-- `openjdk`, `openjdk:11`, `openjdk:11-jdk`, `openjdk:11-jdk-slim` [11/jdk/slim/Dockerfile](11/jdk/slim/Dockerfile)
-- `openjdk:11-jre`, `openjdk:11-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
-- `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim` [10/jdk/slim/Dockerfile](10/jdk/slim/Dockerfile)
-- `openjdk:10-jre`, `openjdk:10-jre-slim` [10/jre/slim/Dockerfile](10/jre/slim/Dockerfile)
-- `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine` [8/jre/alpine/Dockerfile](8/jre/alpine/Dockerfile)
+- `openjdk`, `openjdk:11`, `openjdk:11-jdk`, `openjdk:11-jdk-slim`, `openjdk:11.0.1-jdk-slim` [11/jdk/slim/Dockerfile](11/jdk/slim/Dockerfile)
+- `openjdk:11-jre`, `openjdk:11-jre-slim`, `openjdk:11.0.1-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
+- `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim`, `openjdk:10.0.2-13-jdk-slim` [10/jdk/slim/Dockerfile](10/jdk/slim/Dockerfile)
+- `openjdk:10-jre`, `openjdk:10-jre-slim`, `openjdk:10.0.2-13-jre-slim` [10/jre/slim/Dockerfile](10/jre/slim/Dockerfile)
+- `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine`, `openjdk:8u171-jre-alpine`, `openjdk:8u171-jre-alpine3.8`
+ [8/jre/alpine/Dockerfile](8/jre/alpine/Dockerfile)
 
 ### openjdk with aws-cli
-- `openjdk:11-aws`, `openjdk:11-jdk-aws`, `openjdk:11-jdk-slim-aws` [11/jdk/slim-aws/Dockerfile](11/jdk/slim-aws/Dockerfile)
-- `openjdk:11-jre-aws`, `openjdk:11-jre-slim-aws` [11/jre/slim-aws/Dockerfile](11/jre/slim-aws/Dockerfile)
-- `openjdk:10-aws`, `openjdk:10-jdk-aws`, `openjdk:10-jdk-slim-aws` [10/jdk/slim-aws/Dockerfile](10/jdk/slim-aws/Dockerfile)
-- `openjdk:10-jre-aws`, `openjdk:10-jre-slim-aws` [10/jre/slim-aws/Dockerfile](10/jre/slim-aws/Dockerfile)
+- `openjdk:11-aws`, `openjdk:11-jdk-aws`, `openjdk:11-jdk-slim-aws`, `openjdk:11.0.1-jdk-slim-aws` [11/jdk/slim-aws/Dockerfile](11/jdk/slim-aws/Dockerfile)
+- `openjdk:11-jre-aws`, `openjdk:11-jre-slim-aws`, `openjdk:11.0.1-jre-slim-aws` [11/jre/slim-aws/Dockerfile](11/jre/slim-aws/Dockerfile)
+- `openjdk:10-aws`, `openjdk:10-jdk-aws`, `openjdk:10-jdk-slim-aws`, `openjdk:10.0.2-13-jdk-slim-aws` [10/jdk/slim-aws/Dockerfile](10/jdk/slim-aws/Dockerfile)
+- `openjdk:10-jre-aws`, `openjdk:10-jre-slim-aws`, `openjdk:10.0.2-13-jre-slim-aws` [10/jre/slim-aws/Dockerfile](10/jre/slim-aws/Dockerfile)
 
 ## Why
 
