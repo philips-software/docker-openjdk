@@ -11,6 +11,7 @@ fi
 
 builddir=$1
 shift
+alltags=$@
 basetag=$1
 shift
 tags=$@
@@ -25,6 +26,7 @@ echo "-------------------------------------------------------------------------"
 cd ../$builddir
 
 echo "https://github.com/philips-software/$project/tree/$commitsha" > REPO
+echo "$alltags" >> TAGS
 
 docker build . -t philipssoftware/$basetag
 while test ${#} -gt 0
