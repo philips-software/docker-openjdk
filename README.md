@@ -82,7 +82,7 @@ You can use this to pin down a version of the container from an existing develop
 - `openjdk:11-jre`, `openjdk:11-jre-slim`, `openjdk:11.0.1-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
 - `openjdk:10`, `openjdk:10-jdk`, `openjdk:10-jdk-slim`, `openjdk:10.0.2-13-jdk-slim` [10/jdk/slim/Dockerfile](10/jdk/slim/Dockerfile)
 - `openjdk:10-jre`, `openjdk:10-jre-slim`, `openjdk:10.0.2-13-jre-slim` [10/jre/slim/Dockerfile](10/jre/slim/Dockerfile)
-- `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine`, `openjdk:8u171-jre-alpine`, `openjdk:8u171-jre-alpine3.8`
+- `openjdk:8`, `openjdk:8-jre`, `openjdk:8-jre-alpine`, `openjdk:8u181-jre-alpine`, `openjdk:8u181-jre-alpine3.8`
  [8/jre/alpine/Dockerfile](8/jre/alpine/Dockerfile)
 
 ### openjdk with aws-cli

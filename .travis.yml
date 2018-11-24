@@ -25,5 +25,5 @@ jobs:
     - stage: build
       script: ./bin/docker_build_and_push.sh 11/jre/slim openjdk:11-jre openjdk:11-jre-slim openjdk:11.0.1-jre-slim
     - stage: build
-      script: ./bin/docker_build_and_push.sh 8/jre/alpine openjdk:8 openjdk:8-jre openjdk:8-jre-alpine openjdk:8u171-jre-alpine openjdk:8u171-jre-alpine3.8
+      script: ./bin/docker_build_and_push.sh 8/jre/alpine openjdk:8 openjdk:8-jre openjdk:8-jre-alpine openjdk:8u181-jre-alpine openjdk:8u181-jre-alpine3.8
 
