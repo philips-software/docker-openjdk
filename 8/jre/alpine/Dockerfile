@@ -19,6 +19,7 @@ USER java
 WORKDIR /app
 
 ADD REPO .
+ADD TAGS .
 
 # Define default command.
 CMD ["/bin/sh"]

@@ -60,7 +60,8 @@ This file has a url to the REPO with specific commit-sha of the build.
 Example: 
 
 ```
-https://github.com/philips-software/openjdk/tree/b4bfb391eb360fc7d65657005f8d4da1e3e3047e
+$ docker run -it --rm philipssoftware/openjdk:11 cat REPO
+https://github.com/philips-software/openjdk/tree/036ab9406533105e358ac768a51c1285cf523742
 ```
 
 ### TAGS
@@ -68,6 +69,7 @@ https://github.com/philips-software/openjdk/tree/b4bfb391eb360fc7d65657005f8d4da
 This contains all the simular tags at the point of creation. 
 
 ```
+$ docker run -it --rm philipssoftware/openjdk:10 cat TAGS
 openjdk:10 openjdk:10-jdk openjdk:10-jdk-slim openjdk:10.0.2-13-jdk-slim
 ```
 

@@ -4,6 +4,8 @@ currentdir=$(pwd)
 
 cd `dirname "$0"`
 
+basedir="$(dirname "$(pwd)")"
+
 if [ "$#" -lt 2 ]; then
   echo "You need to provide a directory with a Dockerfile in it and a tag."
   exit 1
@@ -16,7 +18,7 @@ basetag=$1
 shift
 tags=$@
 
-project=`basename $currentdir`
+project=`basename $basedir`
 commitsha=`git rev-parse --verify HEAD`
 
 echo $currentdir

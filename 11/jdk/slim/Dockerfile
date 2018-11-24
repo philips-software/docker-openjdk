@@ -24,5 +24,6 @@ USER java
 WORKDIR /app
 
 ADD REPO .
+ADD TAGS .
 
 ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport"

@@ -19,5 +19,6 @@ RUN apt-get update && \
     apt-get clean 
 
 ADD REPO .
+ADD TAGS .
 
 ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport"
