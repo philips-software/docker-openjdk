@@ -1,4 +1,4 @@
-FROM openjdk:8u171-jre-alpine3.8
+FROM openjdk:8u181-jre-alpine3.8
 MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 RUN apk --no-cache add \
