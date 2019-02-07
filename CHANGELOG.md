@@ -6,6 +6,13 @@ and this project uses the version of main tool as main version number .
 
 ## [Unreleased]
 
+### Changed
+- Upgrade openjdk jdk to 11.0.2-jdk-slim
+- Upgrade openjdk jre to 11.0.2-jre-slim
+- Upgrade openjdk jre to 8u191 alpine 3.9 
+- Add openjdk jdk to 8u191 alpine 3.9 
+- Upgrade aws cli to 1.16.99 
+
 ### Added
 - Add openjdk 8
 - Add openjdk 10
