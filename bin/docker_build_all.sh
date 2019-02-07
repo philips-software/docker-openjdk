@@ -11,3 +11,4 @@ cd `dirname "$0"`
 ./docker_build.sh 10/jdk/slim openjdk:10 openjdk:10-jdk openjdk:10-jdk-slim
 ./docker_build.sh 10/jdk/slim-aws openjdk:10-aws openjdk:10-jdk-aws openjdk:10-jdk-slim-aws
 ./docker_build.sh 8/jre/alpine openjdk:8 openjdk:8-jre openjdk:8-jre-alpine
+./docker_build.sh 8/jdk/alpine openjdk:8-jdk openjdk:8-jdk-alpine
