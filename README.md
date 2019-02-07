@@ -52,7 +52,7 @@ Example:
 
 ```
 $ docker run -it --rm philipssoftware/openjdk:11 cat REPO
-https://github.com/philips-software/openjdk/tree/036ab9406533105e358ac768a51c1285cf523742
+https://github.com/philips-software/openjdk/tree/facb2271e5a563e5d6f65ca3f475cefac37b8b6c
 ```
 
 ### TAGS
@@ -60,11 +60,11 @@ https://github.com/philips-software/openjdk/tree/036ab9406533105e358ac768a51c128
 This contains all the similar tags at the point of creation. 
 
 ```
-$ docker run -it --rm philipssoftware/openjdk:10 cat TAGS
-openjdk:10 openjdk:10-jdk openjdk:10-jdk-slim openjdk:10.0.2-13-jdk-slim
+$ docker run -it --rm philipssoftware/openjdk:11 cat TAGS
+openjdk openjdk:11 openjdk:11-jdk openjdk:11-jdk-slim openjdk:11.0.2-jdk-slim
 ```
 
-You can use this to pin down a version of the container from an existing development build for production. When using `openjdk:10-jdk` for development. This ensures that you've got all security updates in your build. If you want to pin the version of your image down for production, you can use this file inside of the container to look for the most specific tag, the last one.
+You can use this to pin down a version of the container from an existing development build for production. When using `openjdk:11` for development. This ensures that you've got all security updates in your build. If you want to pin the version of your image down for production, you can use this file inside of the container to look for the most specific tag, the last one.
 
 ## Simple Tags
 
