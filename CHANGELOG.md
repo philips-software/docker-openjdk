@@ -7,6 +7,7 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Changed
+- Remove openjdk 10
 - Upgrade openjdk jdk to 11.0.2-jdk-slim
 - Upgrade openjdk jre to 11.0.2-jre-slim
 - Upgrade openjdk jre to 8u191 alpine 3.9 
