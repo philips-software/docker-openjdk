@@ -4,7 +4,10 @@ MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 RUN apk --no-cache add \
       curl \
       jq \
+      git \
+      wget \
       openssl \
+      bash \
       net-tools && \
     rm -rf /var/cache/apk/*
 
