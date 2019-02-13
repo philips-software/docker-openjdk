@@ -33,10 +33,10 @@ Current versions available:
 Images can be found on [https://hub.docker.com/r/philipssoftware/openjdk/](https://hub.docker.com/r/philipssoftware/openjdk/).
 
 ```
-docker run -it --rm philipssoftware/openjdk:11 java -version
-docker run -it --rm philipssoftware/openjdk:11-jre java -version
-docker run -it --rm philipssoftware/openjdk:8 java -version
-docker run -it --rm philipssoftware/openjdk:8-jre java -version
+docker run philipssoftware/openjdk:11 java -version
+docker run philipssoftware/openjdk:11-jre java -version
+docker run philipssoftware/openjdk:8 java -version
+docker run philipssoftware/openjdk:8-jre java -version
 ```
 
 ## Content
@@ -51,7 +51,7 @@ This file has a url to the REPO with specific commit-sha of the build.
 Example: 
 
 ```
-$ docker run -it --rm philipssoftware/openjdk:11 cat REPO
+$ docker run philipssoftware/openjdk:11 cat REPO
 https://github.com/philips-software/openjdk/tree/facb2271e5a563e5d6f65ca3f475cefac37b8b6c
 ```
 
@@ -60,7 +60,7 @@ https://github.com/philips-software/openjdk/tree/facb2271e5a563e5d6f65ca3f475cef
 This contains all the similar tags at the point of creation. 
 
 ```
-$ docker run -it --rm philipssoftware/openjdk:11 cat TAGS
+$ docker run philipssoftware/openjdk:11 cat TAGS
 openjdk openjdk:11 openjdk:11-jdk openjdk:11-jdk-slim openjdk:11.0.2-jdk-slim
 ```
 
