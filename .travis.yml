@@ -9,15 +9,15 @@ sudo: true
 jobs:
   include:
     - stage: build
-      script: ./bin/docker_build_and_push.sh 11/jdk/slim-aws openjdk:11-aws openjdk:11-jdk-aws openjdk:11-jdk-slim-aws openjdk:11.0.2-jdk-slim-aws
+      script: ./ci/bin/docker_build_and_push.sh 11/jdk/slim-aws openjdk:11-aws openjdk:11-jdk-aws openjdk:11-jdk-slim-aws openjdk:11.0.2-jdk-slim-aws
     - stage: build
-      script: ./bin/docker_build_and_push.sh 11/jdk/slim openjdk openjdk:11 openjdk:11-jdk openjdk:11-jdk-slim openjdk:11.0.2-jdk-slim
+      script: ./ci/bin/docker_build_and_push.sh 11/jdk/slim openjdk openjdk:11 openjdk:11-jdk openjdk:11-jdk-slim openjdk:11.0.2-jdk-slim
     - stage: build 
-      script: ./bin/docker_build_and_push.sh 11/jre/slim-aws openjdk:11-jre-aws openjdk:11-jre-slim-aws openjdk:11.0.2-jre-slim-aws
+      script: ./ci/bin/docker_build_and_push.sh 11/jre/slim-aws openjdk:11-jre-aws openjdk:11-jre-slim-aws openjdk:11.0.2-jre-slim-aws
     - stage: build
-      script: ./bin/docker_build_and_push.sh 11/jre/slim openjdk:11-jre openjdk:11-jre-slim openjdk:11.0.2-jre-slim
+      script: ./ci/bin/docker_build_and_push.sh 11/jre/slim openjdk:11-jre openjdk:11-jre-slim openjdk:11.0.2-jre-slim
     - stage: build
-      script: ./bin/docker_build_and_push.sh 8/jdk/alpine openjdk:8 openjdk:8-jdk openjdk:8-jdk-alpine openjdk:8u191-jdk-alpine openjdk:8u191-jdk-alpine3.9
+      script: ./ci/bin/docker_build_and_push.sh 8/jdk/alpine openjdk:8 openjdk:8-jdk openjdk:8-jdk-alpine openjdk:8u191-jdk-alpine openjdk:8u191-jdk-alpine3.9
     - stage: build
-      script: ./bin/docker_build_and_push.sh 8/jre/alpine openjdk:8-jre openjdk:8-jre-alpine openjdk:8u191-jre-alpine openjdk:8u191-jre-alpine3.9
+      script: ./ci/bin/docker_build_and_push.sh 8/jre/alpine openjdk:8-jre openjdk:8-jre-alpine openjdk:8u191-jre-alpine openjdk:8u191-jre-alpine3.9
 
