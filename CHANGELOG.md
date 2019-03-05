@@ -7,6 +7,7 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Changed
+- Uses common build scripts 1.0.1
 - Add bash to openjdk 8 
 - Remove openjdk 10
 - Upgrade openjdk jdk to 11.0.2-jdk-slim
