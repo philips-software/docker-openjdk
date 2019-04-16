@@ -1,4 +1,4 @@
-FROM openjdk:11.0.2-jdk-slim
+FROM openjdk:11.0.3-jdk-slim
 MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 # Default to UTF-8 file.encoding

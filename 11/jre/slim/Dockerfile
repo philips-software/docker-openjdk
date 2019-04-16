@@ -1,4 +1,4 @@
-FROM openjdk:11.0.2-jre-slim
+FROM openjdk:11.0.3-jre-slim
 MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 RUN apt-get update && \
