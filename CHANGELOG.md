@@ -23,6 +23,7 @@ and this project uses the version of main tool as main version number .
 - Upgrade aws cli to 1.16.99 
 
 ### Added
+- Add CODEOWNERS
 - Add openjdk 8
 - Add openjdk 10
 - Add openjdk 11
