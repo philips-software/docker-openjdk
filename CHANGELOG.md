@@ -7,6 +7,7 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Changed
+- Moves ci to github actions
 - Upgrade openjdk jdk to 11.0.3-jdk-slim
 - Upgrade openjdk jre to 11.0.3-jre-slim
 - Upgrade openjdk jre to 8u201 alpine 3.9 
