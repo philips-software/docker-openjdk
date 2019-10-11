@@ -1,6 +1,6 @@
 on: [push]
 
-name: Build Docker images
+name: build
 
 jobs:
   build_java_11_jdk_slim_aws:

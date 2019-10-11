@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/philips-software/openjdk.svg?branch=master)](https://travis-ci.com/philips-software/openjdk)
+[![Build Status](https://github.com/philips-software/docker-openjdk/workflows/build/badge.svg)](https://github.com/philips-software/docker-openjdk/actions/)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
 # Docker images
@@ -52,7 +52,7 @@ Example:
 
 ```
 $ docker run philipssoftware/openjdk:11 cat REPO
-https://github.com/philips-software/openjdk/tree/facb2271e5a563e5d6f65ca3f475cefac37b8b6c
+https://github.com/philips-software/docker-openjdk/tree/facb2271e5a563e5d6f65ca3f475cefac37b8b6c
 ```
 
 ### TAGS
@@ -90,7 +90,7 @@ That's why we want our own docker file definitions.
 
 ## Issues
 
-- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/openjdk/issues)
+- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/docker-openjdk/issues)
 
 ## Author
 
