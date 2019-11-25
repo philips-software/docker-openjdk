@@ -7,6 +7,9 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Changed
+- Upgrade openjdk jdk to 11.0.5-jdk-slim
+- Upgrade openjdk jre to 11.0.5-jre-slim
+- Upgrade aws cli to 1.16.237
 - Moves ci to github actions
 - Upgrade openjdk jdk to 11.0.3-jdk-slim
 - Upgrade openjdk jre to 11.0.3-jre-slim
