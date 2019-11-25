@@ -1,4 +1,4 @@
-FROM openjdk:11.0.3-jre-slim
+FROM openjdk:11.0.5-jre-slim
 MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 RUN apt-get update && \
@@ -11,7 +11,7 @@ RUN apt-get update && \
       wget && \
     rm -rf /var/lib/apt/lists/*
 
-ENV AWSCLI_VERSION 1.16.140
+ENV AWSCLI_VERSION 1.16.237
 
 RUN pip install awscli==$AWSCLI_VERSION
 
