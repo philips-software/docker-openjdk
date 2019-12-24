@@ -41,8 +41,8 @@ jobs:
         DOCKER_ORGANIZATION: ${{ secrets.DOCKER_ORGANIZATION }}
         GITHUB_ORGANIZATION: ${{ secrets.GITHUB_ORGANIZATION }}
 
-  build_java_11_jdk_slim_docker:
-    name: Build 11 jdk slim docker
+  build_java_11_jdk_zulu:
+    name: Build 11 jdk zulu
     runs-on: ubuntu-latest
 
     steps:
@@ -53,7 +53,26 @@ jobs:
 
     - name: Build and Publish Docker Images
       run: |
-        ./ci/bin/docker_build_and_push.sh 11/jdk/slim-docker openjdk:11-docker openjdk:11-jdk-docker openjdk:11-jdk-slim-docker openjdk:11.0.5-jdk-slim-docker
+        ./ci/bin/docker_build_and_push.sh 11/jdk/zulu openjdk:11-zulu openjdk:11-jdk-zulu openjdk:11-jdk-zulu openjdk:11.0.5-jdk-zulu
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
+        DOCKER_ORGANIZATION: ${{ secrets.DOCKER_ORGANIZATION }}
+        GITHUB_ORGANIZATION: ${{ secrets.GITHUB_ORGANIZATION }}
+
+  build_java_11_jdk_zulu_docker:
+    name: Build 11 jdk zulu docker
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Build and Publish Docker Images
+      run: |
+        ./ci/bin/docker_build_and_push.sh 11/jdk/zulu-docker openjdk:11-zulu-docker openjdk:11-jdk-zulu-docker openjdk:11-jdk-zulu-docker openjdk:11.0.5-jdk-zulu-docker
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
