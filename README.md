@@ -79,6 +79,9 @@ You can use this to pin down a version of the container from an existing develop
 - `openjdk:11-aws`, `openjdk:11-jdk-aws`, `openjdk:11-jdk-slim-aws`, `openjdk:11.0.5-jdk-slim-aws` [11/jdk/slim-aws/Dockerfile](11/jdk/slim-aws/Dockerfile)
 - `openjdk:11-jre-aws`, `openjdk:11-jre-slim-aws`, `openjdk:11.0.5-jre-slim-aws` [11/jre/slim-aws/Dockerfile](11/jre/slim-aws/Dockerfile)
 
+### openjdk with docker
+- `openjdk:11-docker`, `openjdk:11-jdk-docker`, `openjdk:11-jdk-slim-docker`, `openjdk:11.0.5-jdk-slim-docker` [11/jdk/slim-docker/Dockerfile](11/jdk/slim-docker/Dockerfile) 
+
 ## Why
 
 > Why do we have our own docker image definitions?
