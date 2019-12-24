@@ -17,13 +17,7 @@ RUN curl -fsSL https://get.docker.com -o get-docker.sh && \
     sh get-docker.sh && \
     rm get-docker.sh
 
-RUN addgroup --system java && \
-    adduser --system --group java
-
 RUN mkdir /app
-RUN chown java:java /app
-
-USER java
 
 WORKDIR /app
 
