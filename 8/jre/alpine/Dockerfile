@@ -5,7 +5,7 @@ RUN apk --no-cache add \
       curl \
       jq \
       openssl \
-      nc \
+      netcat-openbsd \
       net-tools && \
     rm -rf /var/cache/apk/*
 

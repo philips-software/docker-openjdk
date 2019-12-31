@@ -13,7 +13,7 @@ RUN apt-get update && \
       curl \
       python \
       python-pip \
-      nc \
+      netcat-openbsd \
       bash && \
     pip install --no-cache-dir awscli==$AWSCLI_VERSION && \
     rm -rf /var/lib/apt/lists/* && \

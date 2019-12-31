@@ -9,7 +9,7 @@ RUN apt-get update && \
       git \
       wget \
       curl \
-      nc \
+      netcat-openbsd \
       bash && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean 

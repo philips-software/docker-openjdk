@@ -8,7 +8,7 @@ RUN apk --no-cache add \
       wget \
       openssl \
       bash \
-      nc \
+      netcat-openbsd \
       net-tools && \
     rm -rf /var/cache/apk/*
 
