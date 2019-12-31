@@ -6,6 +6,7 @@ RUN apt-get update && \
       curl \
       jq \
       openssl \
+      netcat-openbsd \
       net-tools \
       wget && \
     rm -rf /var/lib/apt/lists/*

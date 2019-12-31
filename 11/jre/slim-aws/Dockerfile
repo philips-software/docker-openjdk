@@ -8,6 +8,7 @@ RUN apt-get update && \
       openssl \
       net-tools \
       python-pip \
+      netcat-openbsd \
       wget && \
     rm -rf /var/lib/apt/lists/*
 
