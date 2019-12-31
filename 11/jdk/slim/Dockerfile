@@ -9,6 +9,7 @@ RUN apt-get update && \
       git \
       wget \
       curl \
+      nc \
       bash && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean 

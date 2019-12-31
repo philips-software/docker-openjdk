@@ -7,6 +7,7 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Changed
+- Add `nc`
 - Upgrade openjdk jdk to 11.0.5-jdk-slim
 - Upgrade openjdk jre to 11.0.5-jre-slim
 - Upgrade aws cli to 1.16.237
