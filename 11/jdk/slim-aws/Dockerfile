@@ -11,6 +11,7 @@ RUN apt-get update && \
       git \
       wget \
       curl \
+      jq \
       python \
       python-pip \
       netcat-openbsd \
