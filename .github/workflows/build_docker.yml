@@ -14,7 +14,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 11/jdk/slim-aws 
-        tags: openjdk:11-aws openjdk:11-jdk-aws openjdk:11-jdk-slim-aws openjdk:11.0.6-jdk-slim-aws
+        image-name: openjdk
+        tags: 11-aws 11-jdk-aws 11-jdk-slim-aws 11.0.6-jdk-slim-aws
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -32,7 +33,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 11/jdk/slim 
-        tags: openjdk openjdk:11 openjdk:11-jdk openjdk:11-jdk-slim openjdk:11.0.6-jdk-slim
+        image-name: openjdk
+        tags: latest 11 11-jdk 11-jdk-slim 11.0.6-jdk-slim
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -50,7 +52,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 11/jdk/zulu
-        tags: openjdk:11-zulu openjdk:11-jdk-zulu openjdk:11-jdk-zulu openjdk:11.0.5-jdk-zulu
+        image-name: openjdk
+        tags: 11-zulu 11-jdk-zulu 11-jdk-zulu 11.0.5-jdk-zulu
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -68,7 +71,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 11/jdk/zulu-docker
-        tags: openjdk:11-zulu-docker openjdk:11-jdk-zulu-docker openjdk:11-jdk-zulu-docker openjdk:11.0.5-jdk-zulu-docker
+        image-name: openjdk
+        tags: 11-zulu-docker 11-jdk-zulu-docker 11-jdk-zulu-docker 11.0.5-jdk-zulu-docker
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -86,7 +90,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 11/jre/slim-aws 
-        tags: openjdk:11-jre-aws openjdk:11-jre-slim-aws openjdk:11.0.6-jre-slim-aws
+        image-name: openjdk
+        tags: 11-jre-aws 11-jre-slim-aws 11.0.6-jre-slim-aws
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -104,7 +109,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 11/jre/slim
-        tags: openjdk:11-jre openjdk:11-jre-slim openjdk:11.0.6-jre-slim
+        image-name: openjdk
+        tags: 11-jre 11-jre-slim 11.0.6-jre-slim
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -122,7 +128,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 8/jdk/alpine 
-        tags: openjdk:8 openjdk:8-jdk openjdk:8-jdk-alpine openjdk:8u201-jdk-alpine openjdk:8u201-jdk-alpine3.9
+        image-name: openjdk
+        tags: 8 8-jdk 8-jdk-alpine 8u201-jdk-alpine 8u201-jdk-alpine3.9
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -140,7 +147,8 @@ jobs:
       uses: philips-software/docker-ci-scripts@v3.0.0
       with:
         dockerfile: 8/jre/alpine 
-        tags: openjdk:8-jre openjdk:8-jre-alpine openjdk:8u201-jre-alpine openjdk:8u201-jre-alpine3.9
+        image-name: openjdk
+        tags: 8-jre 8-jre-alpine 8u201-jre-alpine 8u201-jre-alpine3.9
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
