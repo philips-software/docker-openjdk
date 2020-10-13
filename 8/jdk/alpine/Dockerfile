@@ -33,8 +33,6 @@ RUN mkdir -p /usr/share/maven \
 ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "${USER_HOME_DIR}/.m2"
 
-USER java
-
 WORKDIR /app
 
 ADD REPO .
