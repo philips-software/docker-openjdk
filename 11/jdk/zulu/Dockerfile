@@ -1,16 +1,17 @@
-FROM azul/zulu-openjdk-alpine:11.0.5
+FROM azul/zulu-openjdk-alpine:11.0.7
 MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
 
 RUN apk --no-cache add \
-      curl \
-      jq \
-      git \
-      wget \
-      openssl \
-      bash \
-      netcat-openbsd \
-      net-tools && \
-    rm -rf /var/cache/apk/*
+  curl \
+  jq \
+  git \
+  wget \
+  openssl \
+  bash \
+  netcat-openbsd \
+  net-tools \
+  tar && \
+  rm -rf /var/cache/apk/*
 
 RUN addgroup -S java && \
   adduser -S -G java java
