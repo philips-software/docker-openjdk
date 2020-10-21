@@ -1,5 +1,5 @@
 FROM openjdk:8u201-jdk-alpine3.9
-MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
+LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 ARG MAVEN_VERSION="3.6.3"
 ARG USER_HOME_DIR="/root"

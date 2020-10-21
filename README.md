@@ -73,7 +73,7 @@ You can use this to pin down a version of the container from an existing develop
 
 ### openjdk
 - `openjdk`, `openjdk:11`, `openjdk:11-jdk`, `openjdk:11-jdk-slim`, `openjdk:11.0.6-jdk-slim` [11/jdk/slim/Dockerfile](11/jdk/slim/Dockerfile)
-- `openjdk:11-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11.0.5-jdk-zulu` [11/jdk/zulu/Dockerfile](11/jdk/zulu/Dockerfile)
+- `openjdk:11-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11.0.7-jdk-zulu` [11/jdk/zulu/Dockerfile](11/jdk/zulu/Dockerfile)
 - `openjdk:11-jre`, `openjdk:11-jre-slim`, `openjdk:11.0.6-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
 - `openjdk:8`, `openjdk:8-jdk`, `openjdk:8-jdk-alpine`, `openjdk:8u201-jdk-alpine`, `openjdk:8u201-jdk-alpine3.9` [8/jdk/alpine/Dockerfile](8/jdk/alpine/Dockerfile)
 - `openjdk:8-jre`, `openjdk:8-jre-alpine`, `openjdk:8u201-jre-alpine`, `openjdk:8u201-jre-alpine3.9`

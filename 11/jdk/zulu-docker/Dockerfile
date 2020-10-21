@@ -1,5 +1,5 @@
 FROM docker:19.03.5 
-MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
+LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 RUN apk --no-cache add \
       curl \

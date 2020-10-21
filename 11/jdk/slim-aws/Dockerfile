@@ -1,5 +1,5 @@
 FROM openjdk:11.0.6-jdk-slim
-MAINTAINER Forest Keepers <Jeroen.knoops@philips.com>
+LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
