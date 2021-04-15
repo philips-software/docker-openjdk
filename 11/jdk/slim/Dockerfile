@@ -1,4 +1,4 @@
-FROM openjdk:11.0.6-jdk-slim
+FROM openjdk:11.0.10-jdk-slim
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 ARG MAVEN_VERSION="3.6.3"

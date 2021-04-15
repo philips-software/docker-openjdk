@@ -1,4 +1,4 @@
-FROM openjdk:11.0.6-jdk-slim
+FROM openjdk:11.0.10-jdk-slim
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 # Default to UTF-8 file.encoding
