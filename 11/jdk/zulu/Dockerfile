@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk-alpine:11.0.7
+FROM azul/zulu-openjdk-alpine:11.0.10
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 RUN apk --no-cache add \
