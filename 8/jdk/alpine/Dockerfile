@@ -1,4 +1,4 @@
-FROM openjdk:8u201-jdk-alpine3.9
+FROM azul/zulu-openjdk-alpine:8u282
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 ARG MAVEN_VERSION="3.6.3"

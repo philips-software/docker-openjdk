@@ -1,4 +1,4 @@
-FROM openjdk:8u201-jre-alpine3.9
+FROM azul/zulu-openjdk-alpine:8u282-jre
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 RUN apk --no-cache add \
