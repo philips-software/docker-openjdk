@@ -129,7 +129,7 @@ jobs:
       with:
         dockerfile: 8/jdk/alpine 
         image-name: openjdk
-        tags: 8 8-jdk 8-jdk-alpine 8u201-jdk-alpine 8u201-jdk-alpine3.9
+        tags: 8 8-jdk 8-jdk-alpine 8u282-jdk-alpine
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -148,7 +148,7 @@ jobs:
       with:
         dockerfile: 8/jre/alpine 
         image-name: openjdk
-        tags: 8-jre 8-jre-alpine 8u201-jre-alpine 8u201-jre-alpine3.9
+        tags: 8-jre 8-jre-alpine 8u282-jre-alpine
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
