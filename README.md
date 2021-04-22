@@ -72,8 +72,8 @@ You can use this to pin down a version of the container from an existing develop
 ## Simple Tags
 
 ### openjdk
-- `openjdk:11-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11.0.10-jdk-zulu` [11/jdk/zulu/Dockerfile](11/jdk/zulu/Dockerfile)
 - `openjdk`, `openjdk:11`, `openjdk:11-jdk`, `openjdk:11-jdk-slim`, `openjdk:11.0.11-jdk-slim` [11/jdk/slim/Dockerfile](11/jdk/slim/Dockerfile)
+- `openjdk:11-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11.0.11-jdk-zulu` [11/jdk/zulu/Dockerfile](11/jdk/zulu/Dockerfile)
 - `openjdk:11-jre`, `openjdk:11-jre-slim`, `openjdk:11.0.11-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
 - `openjdk:8`, `openjdk:8-jdk`, `openjdk:8-jdk-alpine`, `openjdk:8u282-jdk-alpine` [8/jdk/alpine/Dockerfile](8/jdk/alpine/Dockerfile)
 - `openjdk:8-jre`, `openjdk:8-jre-alpine`, `openjdk:8u282-jre-alpine` [8/jre/alpine/Dockerfile](8/jre/alpine/Dockerfile)
@@ -83,7 +83,7 @@ You can use this to pin down a version of the container from an existing develop
 - `openjdk:11-jre-aws`, `openjdk:11-jre-slim-aws`, `openjdk:11.0.11-jre-slim-aws` [11/jre/slim-aws/Dockerfile](11/jre/slim-aws/Dockerfile)
 
 ### openjdk with docker
-- `openjdk:11-zulu-docker`, `openjdk:11-jdk-zulu-docker`, `openjdk:11-jdk-zulu-docker`, `openjdk:11.0.10-jdk-zulu-docker` [11/jdk/zulu-docker/Dockerfile](11/jdk/zulu-docker/Dockerfile)
+- `openjdk:11-zulu-docker`, `openjdk:11-jdk-zulu-docker`, `openjdk:11-jdk-zulu-docker`, `openjdk:11.0.11-jdk-zulu-docker` [11/jdk/zulu-docker/Dockerfile](11/jdk/zulu-docker/Dockerfile)
 
 ## Why
 

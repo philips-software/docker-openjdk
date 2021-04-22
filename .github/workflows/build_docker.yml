@@ -53,7 +53,7 @@ jobs:
       with:
         dockerfile: 11/jdk/zulu
         image-name: openjdk
-        tags: 11-zulu 11-jdk-zulu 11-jdk-zulu 11.0.10-jdk-zulu
+        tags: 11-zulu 11-jdk-zulu 11-jdk-zulu 11.0.11-jdk-zulu
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -72,7 +72,7 @@ jobs:
       with:
         dockerfile: 11/jdk/zulu-docker
         image-name: openjdk
-        tags: 11-zulu-docker 11-jdk-zulu-docker 11-jdk-zulu-docker 11.0.10-jdk-zulu-docker
+        tags: 11-zulu-docker 11-jdk-zulu-docker 11-jdk-zulu-docker 11.0.11-jdk-zulu-docker
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
