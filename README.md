@@ -64,7 +64,7 @@ This contains all the similar tags at the point of creation.
 
 ```
 $ docker run philipssoftware/openjdk:11 cat TAGS
-openjdk openjdk:11 openjdk:11-jdk openjdk:11-jdk-slim openjdk:11.0.10-jdk-slim
+openjdk openjdk:11 openjdk:11-jdk openjdk:11-jdk-slim openjdk:11.0.11-jdk-slim
 ```
 
 You can use this to pin down a version of the container from an existing development build for production. When using `openjdk:11` for development. This ensures that you've got all security updates in your build. If you want to pin the version of your image down for production, you can use this file inside of the container to look for the most specific tag, the last one.
@@ -72,15 +72,15 @@ You can use this to pin down a version of the container from an existing develop
 ## Simple Tags
 
 ### openjdk
-- `openjdk`, `openjdk:11`, `openjdk:11-jdk`, `openjdk:11-jdk-slim`, `openjdk:11.0.10-jdk-slim` [11/jdk/slim/Dockerfile](11/jdk/slim/Dockerfile)
 - `openjdk:11-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11-jdk-zulu`, `openjdk:11.0.10-jdk-zulu` [11/jdk/zulu/Dockerfile](11/jdk/zulu/Dockerfile)
-- `openjdk:11-jre`, `openjdk:11-jre-slim`, `openjdk:11.0.10-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
+- `openjdk`, `openjdk:11`, `openjdk:11-jdk`, `openjdk:11-jdk-slim`, `openjdk:11.0.11-jdk-slim` [11/jdk/slim/Dockerfile](11/jdk/slim/Dockerfile)
+- `openjdk:11-jre`, `openjdk:11-jre-slim`, `openjdk:11.0.11-jre-slim` [11/jre/slim/Dockerfile](11/jre/slim/Dockerfile)
 - `openjdk:8`, `openjdk:8-jdk`, `openjdk:8-jdk-alpine`, `openjdk:8u282-jdk-alpine` [8/jdk/alpine/Dockerfile](8/jdk/alpine/Dockerfile)
 - `openjdk:8-jre`, `openjdk:8-jre-alpine`, `openjdk:8u282-jre-alpine` [8/jre/alpine/Dockerfile](8/jre/alpine/Dockerfile)
 
 ### openjdk with aws-cli
-- `openjdk:11-aws`, `openjdk:11-jdk-aws`, `openjdk:11-jdk-slim-aws`, `openjdk:11.0.10-jdk-slim-aws` [11/jdk/slim-aws/Dockerfile](11/jdk/slim-aws/Dockerfile)
-- `openjdk:11-jre-aws`, `openjdk:11-jre-slim-aws`, `openjdk:11.0.10-jre-slim-aws` [11/jre/slim-aws/Dockerfile](11/jre/slim-aws/Dockerfile)
+- `openjdk:11-aws`, `openjdk:11-jdk-aws`, `openjdk:11-jdk-slim-aws`, `openjdk:11.0.11-jdk-slim-aws` [11/jdk/slim-aws/Dockerfile](11/jdk/slim-aws/Dockerfile)
+- `openjdk:11-jre-aws`, `openjdk:11-jre-slim-aws`, `openjdk:11.0.11-jre-slim-aws` [11/jre/slim-aws/Dockerfile](11/jre/slim-aws/Dockerfile)
 
 ### openjdk with docker
 - `openjdk:11-zulu-docker`, `openjdk:11-jdk-zulu-docker`, `openjdk:11-jdk-zulu-docker`, `openjdk:11.0.10-jdk-zulu-docker` [11/jdk/zulu-docker/Dockerfile](11/jdk/zulu-docker/Dockerfile)
