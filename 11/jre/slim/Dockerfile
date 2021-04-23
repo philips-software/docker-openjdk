@@ -1,4 +1,4 @@
-FROM openjdk:11.0.10-jre-slim
+FROM openjdk:11.0.11-jre-slim
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 RUN apt-get update && \

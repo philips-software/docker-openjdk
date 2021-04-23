@@ -15,7 +15,7 @@ jobs:
       with:
         dockerfile: 11/jdk/slim-aws 
         image-name: openjdk
-        tags: 11-aws 11-jdk-aws 11-jdk-slim-aws 11.0.10-jdk-slim-aws
+        tags: 11-aws 11-jdk-aws 11-jdk-slim-aws 11.0.11-jdk-slim-aws
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -34,7 +34,7 @@ jobs:
       with:
         dockerfile: 11/jdk/slim 
         image-name: openjdk
-        tags: latest 11 11-jdk 11-jdk-slim 11.0.10-jdk-slim
+        tags: latest 11 11-jdk 11-jdk-slim 11.0.11-jdk-slim
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -53,7 +53,7 @@ jobs:
       with:
         dockerfile: 11/jdk/zulu
         image-name: openjdk
-        tags: 11-zulu 11-jdk-zulu 11-jdk-zulu 11.0.10-jdk-zulu
+        tags: 11-zulu 11-jdk-zulu 11-jdk-zulu 11.0.11-jdk-zulu
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -72,7 +72,7 @@ jobs:
       with:
         dockerfile: 11/jdk/zulu-docker
         image-name: openjdk
-        tags: 11-zulu-docker 11-jdk-zulu-docker 11-jdk-zulu-docker 11.0.10-jdk-zulu-docker
+        tags: 11-zulu-docker 11-jdk-zulu-docker 11-jdk-zulu-docker 11.0.11-jdk-zulu-docker
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -91,7 +91,7 @@ jobs:
       with:
         dockerfile: 11/jre/slim-aws 
         image-name: openjdk
-        tags: 11-jre-aws 11-jre-slim-aws 11.0.10-jre-slim-aws
+        tags: 11-jre-aws 11-jre-slim-aws 11.0.11-jre-slim-aws
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -110,7 +110,7 @@ jobs:
       with:
         dockerfile: 11/jre/slim
         image-name: openjdk
-        tags: 11-jre 11-jre-slim 11.0.10-jre-slim
+        tags: 11-jre 11-jre-slim 11.0.11-jre-slim
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
