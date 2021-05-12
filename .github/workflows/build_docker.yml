@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 11-jdk-slim-aws 
       uses: philips-software/docker-ci-scripts@v3.2.1
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 11-jdk-slim 
       uses: philips-software/docker-ci-scripts@v3.2.1
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 11-jdk-zulu 
       uses: philips-software/docker-ci-scripts@v3.2.1
@@ -65,7 +65,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 11-jdk-zulu-docker
       uses: philips-software/docker-ci-scripts@v3.2.1
@@ -84,7 +84,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 11-jre-slim-aws 
       uses: philips-software/docker-ci-scripts@v3.2.1
@@ -103,7 +103,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 11-jre-slim 
       uses: philips-software/docker-ci-scripts@v3.2.1
@@ -122,7 +122,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 8-jdk-alpine
       uses: philips-software/docker-ci-scripts@v3.2.1
@@ -141,7 +141,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
 
     - name: 8-jre-alpine 
       uses: philips-software/docker-ci-scripts@v3.2.1
