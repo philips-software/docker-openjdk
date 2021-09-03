@@ -1,4 +1,4 @@
-FROM openjdk:11.0.11-jre-slim
+FROM openjdk:11.0.12-jre-slim
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
 RUN apt-get update && \
@@ -7,14 +7,18 @@ RUN apt-get update && \
       jq \
       openssl \
       net-tools \
-      python-pip \
       netcat-openbsd \
-      wget && \
+      wget \
+      unzip && \
     rm -rf /var/lib/apt/lists/*
 
-ENV AWSCLI_VERSION 1.16.237
+ENV AWSCLI_VERSION 2.2.35
 
-RUN pip install awscli==$AWSCLI_VERSION
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-$AWSCLI_VERSION.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && \
+    rm awscliv2.zip && \
+    ./aws/install && \
+    rm -rf aws
 
 RUN addgroup --system java && \
     adduser --system --group java
