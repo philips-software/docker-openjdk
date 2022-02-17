@@ -44,11 +44,42 @@ docker run philipssoftware/openjdk:8-jre java -version
 
 ## Content
 
+We're signing these containers and creating the SLSA-provenance and SBOM for this project.
+You can check the signature, SBOM and SLSA-provenance by installing [Cosign](https://github.com/sigstore/cosign) locally, get the `cosign.pub` file from the repository and perform the following steps:
+
+### Check signature
+
+The containers are signed with Cosign. The public key can be found in the root of the repository in a file: `cosign.pub`.
+
+```bash
+cosign verify --key cosign.pub philipssoftware/openjdk:11-jdk-zulu
+```
+
+### Check SBOM
+
+The SBOM is created with [Syft](https://github.com/anchore/syft) and is attached to the containers. You can verify the attestation with Cosign by executing the following command:
+
+```bash
+cosign verify-attestation --key cosign.pub philipssoftware/openjdk:11-jdk-zulu | jq '.payload |= @base64d | .payload | fromjson | select( .predicateType=="https://spdx.dev/Document" ) | .predicate.Data | fromjson | .'
+```
+
+### Check SLSA-Provenance file
+
+The [SLSA-Provenance](https://slsa.dev) file is created with [SLSA-provenance-action](https://github.com/philips-labs/slsa-provenance-action) and is attached to the containers. You can verify the attestation with Cosign by executing the following command:
+
+```bash
+cosign verify-attestation --key cosign.pub philipssoftware/openjdk:11-jdk-zulu | jq '.payload |= @base64d | .payload | fromjson | select( .predicateType=="https://slsa.dev/provenance/v0.2" ) |  .'
+```
+
+### Other files
+
 The images obviously contain openjdk, but also two other files:
 - `REPO`
 - `TAGS`
 
-### REPO
+This was a way to provide some provenance on the containers. This is now deprecated in favor of the attestations mentioned above.
+
+#### REPO
 
 This file has a url to the REPO with specific commit-sha of the build.
 Example: 
@@ -58,7 +89,7 @@ $ docker run philipssoftware/openjdk:11 cat REPO
 https://github.com/philips-software/docker-openjdk/tree/facb2271e5a563e5d6f65ca3f475cefac37b8b6c
 ```
 
-### TAGS
+#### TAGS
 
 This contains all the similar tags at the point of creation. 
 
