@@ -1,9 +1,9 @@
-FROM openjdk:11.0.12-jdk-slim
+FROM openjdk:11.0.16-jdk-slim
 LABEL maintainer="Forest Keepers <Jeroen.knoops@philips.com>"
 
-ARG MAVEN_VERSION="3.6.3"
+ARG MAVEN_VERSION="3.8.6"
 ARG USER_HOME_DIR="/root"
-ARG SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0
+ARG SHA=f790857f3b1f90ae8d16281f902c689e4f136ebe584aba45e4b1fa66c80cba826d3e0e52fdd04ed44b4c66f6d3fe3584a057c26dfcac544a60b301e6d0f91c26
 ARG BASE_URL="https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries"
 
 # Default to UTF-8 file.encoding
