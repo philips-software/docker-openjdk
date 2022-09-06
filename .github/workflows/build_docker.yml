@@ -3,8 +3,8 @@ on: [push]
 name: build
 
 env:
-  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-  DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
+  REGISTRY_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  REGISTRY_TOKEN: '${{ secrets.DOCKER_PASSWORD }}'
   DOCKER_ORGANIZATION: philipssoftware
   GITHUB_ORGANIZATION: philips-software
   COSIGN_PRIVATE_KEY: '${{ secrets.COSIGN_PRIVATE_KEY }}'
@@ -17,36 +17,36 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: 11-jdk-slim-aws 
-            dockerfile: 11/jdk/slim-aws 
+          - name: 11-jdk-slim-aws
+            dockerfile: 11/jdk/slim-aws
             tags: 11-aws 11-jdk-aws 11-jdk-slim-aws 11.0.16-jdk-slim-aws
-          - name: 11-jdk-slim 
-            dockerfile: 11/jdk/slim 
+          - name: 11-jdk-slim
+            dockerfile: 11/jdk/slim
             tags: latest 11 11-jdk 11-jdk-slim 11.0.16-jdk-slim
-          - name: 11-jdk-zulu 
+          - name: 11-jdk-zulu
             dockerfile: 11/jdk/zulu
             tags: 11-zulu 11-jdk-zulu 11-jdk-zulu 11.0.16-jdk-zulu
           - name: 11-jdk-zulu-docker
             dockerfile: 11/jdk/zulu-docker
             tags: 11-zulu-docker 11-jdk-zulu-docker 11-jdk-zulu-docker 11.0.16-jdk-zulu-docker
-          - name: 11-jre-slim-aws 
-            dockerfile: 11/jre/slim-aws 
+          - name: 11-jre-slim-aws
+            dockerfile: 11/jre/slim-aws
             tags: 11-jre-aws 11-jre-slim-aws 11.0.16-jre-slim-aws
-          - name: 11-jre-slim 
+          - name: 11-jre-slim
             dockerfile: 11/jre/slim
             tags: 11-jre 11-jre-slim 11.0.16-jre-slim
           - name: 8-jdk-alpine
-            dockerfile: 8/jdk/alpine 
+            dockerfile: 8/jdk/alpine
             tags: 8 8-jdk 8-jdk-alpine 8u322-jdk-alpine
-          - name: 8-jre-alpine 
-            dockerfile: 8/jre/alpine 
+          - name: 8-jre-alpine
+            dockerfile: 8/jre/alpine
             tags: 8-jre 8-jre-alpine 8u322-jre-alpine
     steps:
       - uses: actions/checkout@v3
-      - name: ${{ matrix.name }} 
+      - name: ${{ matrix.name }}
         uses: philips-software/docker-ci-scripts@v4.5.0
         with:
-          dockerfile: ${{ matrix.dockerfile }} 
+          dockerfile: ${{ matrix.dockerfile }}
           image-name: openjdk
           tags: ${{ matrix.tags }}
           push-branches: main
