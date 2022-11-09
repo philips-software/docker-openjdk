@@ -1,0 +1,26 @@
+name: Check vulnerabilities 
+
+on:
+  schedule:
+    - cron: '14 12 * * 1'
+  workflow_dispatch:
+
+permissions: 
+  id-token: write
+
+jobs:
+  check:
+    strategy:
+      matrix:
+        include:
+          - tag: 11.0.16-jdk-slim-aws
+          - tag: 11.0.16-jdk-slim
+          - tag: 11.0.16-jdk-zulu
+          - tag: 11.0.16-jdk-zulu-docker
+          - tag: 11.0.16-jre-slim-aws
+          - tag: 11.0.16-jre-slim
+          - tag: 8u322-jdk-alpine
+          - tag: 8u322-jre-alpine
+    uses: philips-software/docker-ci-scripts/.github/workflows/check-vulnerabilities.yaml@main
+    with:
+      image: philipssoftware/openjdk:${{matrix.tag}}
