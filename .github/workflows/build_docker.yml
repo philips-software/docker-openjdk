@@ -7,13 +7,13 @@ env:
   REGISTRY_TOKEN: '${{ secrets.DOCKER_PASSWORD }}'
   DOCKER_ORGANIZATION: philipssoftware
   GITHUB_ORGANIZATION: philips-software
-  COSIGN_PRIVATE_KEY: '${{ secrets.COSIGN_PRIVATE_KEY }}'
-  COSIGN_PASSWORD: '${{ secrets.COSIGN_PASSWORD }}'
-  COSIGN_PUBLIC_KEY: '${{ secrets.COSIGN_PUBLIC_KEY }}'
+  KEYLESS: true
 
 jobs:
   build_container:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     strategy:
       matrix:
         include:
