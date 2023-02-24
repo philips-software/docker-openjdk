@@ -14,6 +14,9 @@ jobs:
     strategy:
       matrix:
         include:
+          - name: 18-nixos
+            dockerfile: 18/jdk/nixos
+            tags: 18 18-jdk 18-jdk-nixos
           - name: 11-jdk-slim-aws
             dockerfile: 11/jdk/slim-aws
             tags: 11-aws 11-jdk-aws 11-jdk-slim-aws 11.0.16-jdk-slim-aws
