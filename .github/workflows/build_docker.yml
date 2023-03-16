@@ -39,7 +39,7 @@ jobs:
             dockerfile: 8/jre/alpine
             tags: 8-jre 8-jre-alpine 8u322-jre-alpine
     steps:
-      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # ratchet:actions/checkout@v3
+      - uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # ratchet:actions/checkout@v3
       - name: ${{ matrix.name }}
         uses: philips-software/docker-ci-scripts@d0045b844f08b0dcb4c62bd4acf6c36877404dae # ratchet:philips-software/docker-ci-scripts@v5.1.0
         with:
