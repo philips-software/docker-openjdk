@@ -1,6 +1,9 @@
 [![Build Status](https://github.com/philips-software/docker-openjdk/workflows/build/badge.svg)](https://github.com/philips-software/docker-openjdk/actions/)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
+> ⚠️ This repository is deprecated. No updates will be applied anymore. There are other ways of getting the latest version of openjdk.
+> For example look at [Chainguard's images](https://www.chainguard.dev/chainguard-images)
+
 # Docker images
 
 This repo will contain docker images with openjdk
