@@ -7,6 +7,7 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Changed
+- Update maven to 3.9.3
 - Update maven to 3.8.7
 - #51 - Use maintainer label
 - Use docker-ci-scripts github action
